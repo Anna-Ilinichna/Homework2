@@ -9,4 +9,4 @@ users = [
 with open('homework.csv', 'w', newline='') as f:
     writer = csv.DictWriter(f, fieldnames=users[0], delimiter=';')   
     writer.writeheader()
-    writer.writerow(users)
+    writer.writerows(users)
